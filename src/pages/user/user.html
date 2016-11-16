@@ -6,61 +6,240 @@
 
 <ion-content padding>
 
-<ion-list>
+  <h3>Workers</h3>
 
-<h3>Workers</h3>
-<ion-item>
-  <ion-label>Sally (Coordinator) Event:Butterfly Fair
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="outline"><b> Name </b></ion-col>
+    <ion-col width-13 class="outline"><b> Job </b></ion-col>
+    <ion-col width-13 class="outline"><b> Event </b></ion-col>
+    <ion-col width-13 class="outline"><b> Check </b></ion-col>
+    <ion-col width-13 class="outline"><b> Check Out </b></ion-col>
+  </ion-row>
+  </ion-grid>
 
-  </ion-label>
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Sally</ion-col>
 
-  
-  
-  <ion-checkbox [(ngModel)]="sally"></ion-checkbox>
-</ion-item>
+    <ion-col width-13 class="eep">
+      <ion-item>
+      <ion-label>Job</ion-label>
+      <ion-select [(ngModel)]="job">
+      <ion-option value="c" selected="true">Coordinator</ion-option>
+      <ion-option value="s">Staff</ion-option>
+      </ion-select>
+    </ion-item>
+    </ion-col>
+    
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+    
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[0]">
+            </ion-datetime>  
+      </ion-label>
+    </ion-col>
 
-<ion-item>
-  <ion-label>Steve (Staff) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="steve"></ion-checkbox>
-</ion-item>
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[1]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col> 
+  </ion-row>
+  </ion-grid>
 
-<ion-item>
-  <ion-label>Jim (Staff) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="jim"></ion-checkbox>
-</ion-item>
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Steve</ion-col>
+    <ion-col width-13 class="eep">Staff</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
 
-<ion-item>
-  <ion-label>Heather (Staff) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="heather"></ion-checkbox>
-</ion-item>
+    <ion-col width-13 class="eep">
+        <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[2]">
+            </ion-datetime>  
+       </ion-label>          
+    </ion-col>
 
-<ion-item>
-  <ion-label>Robert (Staff) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="robert"></ion-checkbox>
-</ion-item>
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[3]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
 
-<h3>Participants</h3>
-<ion-item>
-  <ion-label>Bart (Kid) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="bart"></ion-checkbox>
-</ion-item>
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Jim</ion-col>
+    <ion-col width-13 class="eep">Staff</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
 
-<ion-item>
-  <ion-label>Fed (Husband/Father) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="fed"></ion-checkbox>
-</ion-item>
+    <ion-col width-13 class="eep"> 
+        <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[4]">
+            </ion-datetime>  
+       </ion-label> 
+    </ion-col>
 
-<ion-item>
-  <ion-label>Jeania (Wife/Mother) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="jeania"></ion-checkbox>
-</ion-item>
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[5]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
 
-<ion-item>
-  <ion-label>Jill (Kid) Event:Butterfly Fair</ion-label>
-  <ion-checkbox [(ngModel)]="jill"></ion-checkbox>
-</ion-item>
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Heather</ion-col>
+    <ion-col width-13 class="eep">Staff</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
 
-</ion-list>
+    <ion-col width-13 class="eep">
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[6]">
+            </ion-datetime>  
+       </ion-label> 
+    </ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[7]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Robert</ion-col>
+    <ion-col width-13 class="eep">Staff</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[8]">
+            </ion-datetime>
+      </ion-label>
+    </ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[9]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <h3>Participants</h3>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="outline"><b> Name </b></ion-col>
+    <ion-col width-13 class="outline"><b> Kid/Adult? </b></ion-col>
+    <ion-col width-13 class="outline"><b> Event </b></ion-col>
+    <ion-col width-13 class="outline"><b> Check </b></ion-col>
+    <ion-col width-13 class="outline"><b> Check Out </b></ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Bart</ion-col>
+    <ion-col width-13 class="eep">Kid</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[10]">
+            </ion-datetime>
+      </ion-label>  
+    </ion-col>
+
+    <ion-col width-13 class="eep"> 
+       <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[11]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Fed</ion-col>
+    <ion-col width-13 class="eep">Adult</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep">
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[12]">
+            </ion-datetime>
+      </ion-label>  
+    </ion-col>
+
+    <ion-col width-13 class="eep"> 
+       <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[13]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Jeania</ion-col>
+    <ion-col width-13 class="eep">Adult</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[14]">
+            </ion-datetime>
+      </ion-label>  
+    </ion-col>
+
+    <ion-col width-13 class="eep">
+       <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[15]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+  <ion-row>
+    <ion-col width-13 class="eep">Jill</ion-col>
+    <ion-col width-13 class="eep">Kid</ion-col>
+    <ion-col width-13 class="eep">Butterfly Fair</ion-col>
+
+    <ion-col width-13 class="eep"> 
+      <ion-label> <button ion-button class="button">CheckIn</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[16]">
+            </ion-datetime>
+      </ion-label> 
+    </ion-col>
+
+    <ion-col width-13 class="eep"> 
+       <ion-label> <button ion-button color="danger" class="button">CheckOut</button> 
+            <ion-datetime displayFormat="MM/DD/HH" [(ngModel)]="myDate[17]">
+            </ion-datetime>  
+       </ion-label>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+
+
+
 
 
  
