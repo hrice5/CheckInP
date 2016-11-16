@@ -7,6 +7,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'user.html'
 })
 export class UserPage {
+  myDate: Date[] = [];
 
   constructor(public navCtrl: NavController) {
 
