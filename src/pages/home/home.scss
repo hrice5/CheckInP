@@ -4,8 +4,25 @@ page-home {
     float: right;
 }
 
-.signup{
-  
+.header{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.name{ // didn't use but this is wat the name of the ppl that signed in would look like.
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+}
+
+.body{
+     background-color: tan;
+}
+
+.p {
+    text-align: center;
+    font-size: 25px;
 }
 
 }
